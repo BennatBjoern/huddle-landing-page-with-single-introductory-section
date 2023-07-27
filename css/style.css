@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--violet);
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  max-width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 8rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container img {
+  width: 50%;
+}
+
+.content {
+  margin-left: 4rem;
+  color: #fff;
+  width: 50%;
+}
+
+.content-heading {
+  font-size: 4.8rem;
+  margin-bottom: 3rem;
+}
+
+.content-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  font-size: 1.8rem;
+  border: none;
+  color: var(--violet);
+  padding: 2rem 10rem;
+  border-radius: 100px;
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--soft-magenta);
+}
+
+.social-links {
+  height: 10rem;
+  position: absolute;
+  right: 10rem;
+  bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icon {
+  height: 4rem;
+  width: 4rem;
+  stroke: #fff;
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  stroke: var(--soft-magenta);
+  border-color: var(--soft-magenta);
+}
+
+@media (max-width: 24em) {
+  body {
+    background-image: url("../images/bg-mobile.svg");
+    background-position: top;
+    background-size: contain;
+  }
+  .logo {
+    position: relative;
+    margin-top: 5rem;
+    margin-left: 4.6rem;
+    margin-bottom: 4rem;
+    width: 20rem;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-container img {
+    width: 80%;
+    margin-bottom: 4rem;
+  }
+
+  .content {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .content-heading {
+    font-size: 2.8rem;
+  }
+
+  .social-links {
+    margin-top: 4rem;
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+}
