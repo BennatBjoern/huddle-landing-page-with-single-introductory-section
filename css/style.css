@@ -3,6 +3,7 @@
 :root {
   --violet: hsl(257, 40%, 49%);
   --soft-magenta: hsl(300, 69%, 71%);
+  --white : hsl(0, 0%, 100%);
 }
 
 * {
@@ -48,7 +49,7 @@ body {
 
 .content {
   margin-left: 4rem;
-  color: #fff;
+  color: var(--white);
   width: 50%;
 }
 
@@ -75,7 +76,7 @@ body {
 }
 
 .btn:hover {
-  color: #fff;
+  color: var(--white);
   background-color: var(--soft-magenta);
 }
 
@@ -91,8 +92,8 @@ body {
 .social-icon {
   height: 4rem;
   width: 4rem;
-  stroke: #fff;
-  border: 1px solid #fff;
+  stroke: var(--white);
+  border: 1px solid var(--white);
   padding: 1rem;
   border-radius: 50%;
   transition: all 0.3s;
