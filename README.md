@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontendmentor]()
-- Live Site URL: [Github pages]()
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-using-flexbox-LTv3pCJmMQ)
+- Live Site URL: [Github pages](https://bennatbjoern.github.io/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 
